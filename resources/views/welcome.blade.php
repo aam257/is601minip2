@@ -72,6 +72,7 @@
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('contact') }}">Contact</a>
+                        <a href="{{ route('about') }}">About</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}">Register</a>

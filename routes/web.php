@@ -21,6 +21,8 @@ Route::post('/contact','PagesController@store')->name('contact.store');
 
 Route::get('/thanks/{name}','PagesController@thanks')->name('thanks');
 
+Route::get('/about','PagesController@about')->name('about');
+
 
 
 
