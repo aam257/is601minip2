@@ -15,6 +15,7 @@ class UserTest extends TestCase
      *
      * @return void
      */
+
     public function testInsertest()
     {
         $user = new User();
@@ -24,6 +25,36 @@ class UserTest extends TestCase
         $this->assertTrue($user->save());
     }
 
-    
+    public function testUpdateUsertest()
+    {
+
+        $user = User::all()->last();
+        $user->where('name', 'Jonnyy')->update(['name' => 'Steve Smith']);
+        $this->assertTrue($user->save());
+
+    }
+
+
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
