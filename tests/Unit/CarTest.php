@@ -68,6 +68,14 @@ class CarTest extends TestCase
 
     }
 
+    public function testCarModeltest()
+    {
+
+        $car = Cars::inRandomOrder()->first();
+        $this->assertInternalType('string', $car->Model);
+
+    }
+
 
 }
 
