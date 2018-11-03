@@ -16,6 +16,12 @@ class FeatureTest extends TestCase
 
     }
 
+    public function testLoginPage()
+    {
 
+        $response = $this->get('/login');
+        $response->assertStatus(200);
+
+    }
 
 }
