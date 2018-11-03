@@ -51,6 +51,15 @@ class CarTest extends TestCase
 
     }
 
+    public function testCarYearTypetest()
+    {
+
+        $car = Cars::inRandomOrder()->first();
+        $year = (int) $car->Year;
+        $this->assertInternalType('int',$year);
+
+    }
+
 
 }
 
