@@ -34,7 +34,13 @@ class UserTest extends TestCase
 
     }
 
+    public function testDeleteUsertest()
+    {
 
+        $user = User::all()->last();
+        $this->assertTrue($user->delete());
+
+    }
 
 }
 
